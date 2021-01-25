@@ -1,0 +1,13 @@
+diff --git a/dist/paper.d.ts b/dist/paper.d.ts
+index 1358996..2bfbdea 100644
+--- a/dist/paper.d.ts
++++ b/dist/paper.d.ts
+@@ -5368,7 +5368,7 @@ declare namespace paper {
+          * @param position - the center position at which the raster item is
+          *     placed
+          */
+-        constructor(source?: HTMLImageElement | HTMLCanvasElement | string, position?: Point)
++        constructor(source?: HTMLImageElement | HTMLCanvasElement | string | object, position?: Point)
+
+         /**
+          * Creates a new empty raster of the given size, and places it in the

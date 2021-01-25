@@ -1,0 +1,28 @@
+{
+  "name": "yarn-patch-fails-in-nodemon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "npm-watch": "^0.7.0",
+    "paper": "patch:paper@0.12.11#./paper+0.12.11.patch"
+  },
+  "scripts": {
+    "yarn": "yarn",
+    "watch": "npm-watch yarn"
+  },
+  "watch": {
+    "yarn": {
+      "patterns": [
+        "package.json",
+        "yarn.lock"
+      ],
+      "delay": 10000,
+      "extensions": [
+        "json",
+        "lock"
+      ]
+    }
+  }
+}
